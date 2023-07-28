@@ -9,7 +9,7 @@ public class Reservation {
 	private Integer roomNumber;
 	private Date checkIn;
 	private Date checkOut;
-	
+
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	public Reservation() {
@@ -48,8 +48,10 @@ public class Reservation {
 
 	public String updateDates(Date checkIn, Date checkOut) {	
 		
+
 		Date now = new Date();
-		
+		//comentario para resolver error github
+
 		if(checkIn.before(now) || checkOut.before(now))
 		return "Reservation dates for update must be future dates";
 		
