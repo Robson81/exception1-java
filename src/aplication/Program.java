@@ -47,7 +47,7 @@ public class Program {
 			System.out.println("Error in reservation: " + e.getMessage());
 		}
 		catch(RuntimeException e) {
-			System.out.println("Unexpected error");
+			System.out.println("Unexpected error: " + e.getMessage());
 		}
 	sc.close();	
 	}
